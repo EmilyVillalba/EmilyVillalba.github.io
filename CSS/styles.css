@@ -1,0 +1,17 @@
+body {
+    background-image: url(/Images/other/Italia1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgb(66, 40, 23) !important;
+    background-image: var(--bs-gradient);
+}
+
+.dropdown-menu {
+    background-color: rgb(66, 40, 23) !important;
+    background-image: var(--bs-gradient);
+}
