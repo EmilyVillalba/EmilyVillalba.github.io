@@ -19,6 +19,7 @@ Technologies used in the Project:
 6) Draw.io
 7) Pending: Look into using formspree.io
 8) Pending: HTML validador
+9) AI for images
 
 Future Improvements for the Website:
 1) Include social media links once they are active on social media.

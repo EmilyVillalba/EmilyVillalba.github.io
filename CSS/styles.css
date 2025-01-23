@@ -95,3 +95,13 @@ iframe {
 .underline {
     text-decoration: underline;
 }
+
+.form-floating {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    color: rgb(66, 40, 23);
+    font-weight: bolder;
+}
+
+.form-check
