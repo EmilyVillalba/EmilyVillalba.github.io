@@ -14,13 +14,13 @@ Technologies used in the Project:
 1) HTML
 2) CSS
 3) Bootstrap
-4) Google fonts: link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"
+4) Google fonts: link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
 5) Google Maps
 6) Draw.io
 7) Pending: Look into using formspree.io
 8) Pending: HTML validador
 
-Future Imporvements for the Website:
+Future Improvements for the Website:
 1) Include social media links once they are active on social media.
 2) Include a cart so that users can purchase food items online and then pick up or have them delivered.
 3) Share testimonial experiences of other users and invite users to leave a google review providing the link.
