@@ -15,9 +15,10 @@ Technologies used in the Project:
 2) CSS
 3) Bootstrap
 4) Google fonts: link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet"
-5) Draw.io
-6) Pending: Look into using formspree.io
-7) HTML validador
+5) Google Maps
+6) Draw.io
+7) Pending: Look into using formspree.io
+8) Pending: HTML validador
 
 Future Imporvements for the Website:
 1) Include social media links once they are active on social media.
