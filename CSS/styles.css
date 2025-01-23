@@ -18,14 +18,17 @@ body {
     background-image: var(--bs-gradient);
 }
 
+hr {
+    color: white;
+}
+
 .shield {
     background-color: rgba(66, 40, 23, 0.70);
     background-attachment: fixed;
     background-size: cover;
-    padding-top: 5%;
-
-    
+    padding-top: 5%;    
 }
+
 .carousel {
     width: 65%;
     height:20%;
