@@ -4,6 +4,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    font-family: "poiret One, serif";
 }
 
 .navbar {
@@ -33,7 +34,6 @@ body {
 }
 
 .titles {
-    font-family: "poiret One, Serif";
     color: white;
     padding-top: 2%;
     text-align: center;
@@ -43,7 +43,7 @@ body {
 
 fieldset {
     padding: 10px;
-    border: solid white;
+    border: solid 5px white;
     border-radius: 10px;
     width: 65%;
     background-color: rgb(66, 40, 23);
@@ -52,6 +52,22 @@ fieldset {
 
 }
 
-legend {
-    
+.row {
+    justify-content: center;
+}
+
+.card {
+    margin: 2%;
+    padding: 1%;
+}
+
+.card-body {
+    background-color: rgb(66, 40, 23) !important;
+    background-image: var(--bs-gradient); 
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 2%;
 }
