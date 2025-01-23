@@ -9,6 +9,7 @@ body {
 .navbar {
     background-color: rgb(66, 40, 23) !important;
     background-image: var(--bs-gradient);
+    font-family: "poiret One, serif";
 }
 
 .dropdown-menu {
@@ -18,10 +19,39 @@ body {
 
 .shield {
     background-color: rgba(66, 40, 23, 0.70);
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 5%;
+
+    
 }
 .carousel {
     width: 65%;
     height:20%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding-top: 3%;
+}
+
+.titles {
+    font-family: "poiret One, Serif";
+    color: white;
+    padding-top: 2%;
+    text-align: center;
+    text-shadow: 5px -4px 5px rgb(29, 18, 10);
+
+}
+
+fieldset {
+    padding: 10px;
+    border: solid white;
+    border-radius: 10px;
+    width: 65%;
+    background-color: rgb(66, 40, 23);
+    background-image: var(--bs-gradient);
+    margin: auto;
+
+}
+
+legend {
+    
 }
