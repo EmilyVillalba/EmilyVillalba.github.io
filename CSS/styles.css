@@ -74,3 +74,15 @@ footer {
     color: white;
     padding: 2%;
 }
+
+.container-map {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+iframe {
+    filter: invert(90%);
+}
+
