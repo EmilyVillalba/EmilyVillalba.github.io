@@ -101,7 +101,54 @@ iframe {
     width: 50%;
     margin: auto;
     color: rgb(66, 40, 23);
+    font-weight: bolder;   
+}
+
+.form-check {
+    color:white;
+    text-shadow: 5px -4px 5px rgb(29, 18, 10);
+    font-size: large;
+    margin-left: 25%;
+
+}
+
+input[type="checkbox"] {
+    margin: 10px;
+    padding: 7px;
+    appearance: none;
+    height: 5px;
+    width: 5px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+    background-color: rgb(66, 40, 23);
+}
+
+ input[type="checkbox"]:checked {
+    background-color: rgb(66, 40, 23);
+    border: solid white 1px;
+}
+
+.form-select {
+    color: rgb(66, 40, 23);
     font-weight: bolder;
 }
 
-.form-check
+.text-area {
+width: 35%;
+margin-left: 30%;
+color: white;
+}
+
+.btn-primary {
+    background-color: rgb(66, 40, 23) !important;
+    background-image: var(--bs-gradient);
+    border-color: rgb(66, 40, 23) !important;
+    font-family: "poiret One, serif";
+    width: 30%;
+    margin: auto;
+}
+.btn-primary :hover {
+    font-weight: bolder;
+} 
