@@ -11,38 +11,58 @@
 <link rel="stylesheet" href="./CSS/styles.css"/>
 </head>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top fs-5" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid">
-              <div>
-              <a class="navbar-brand fs-1" href="#">
-                <img src="Images/other/Logo.jpg" alt="Logo" width="100" class="d-inline-block align-text-center">
-                Café Italia
-              </a>
-              </div>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav" >
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Menu Items
-                    </a>
-                    <ul class="dropdown-menu fs-5">
-                      <li><a class="dropdown-item" href="Menu.html">Beverages</a></li>
-                      <hr>
-                      <li><a class="dropdown-item" href="Menu.html#sandwiches">Deli Style Sandwiches</a></li>
-                      <hr>
-                      <li><a class="dropdown-item" href="Menu.html#desserts">Desserts & Pastries</a></li>
-                    </ul>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Coupons.html">Coupons</a>
-                    </li>
-                  </li>
+      <nav class="navbar navbar-expand-sm bg-body-tertiary fixed-top fs-5" class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <div>
+          <a class="navbar-brand fs-1" href="#">
+            <img src="Images/other/Logo.jpg" alt="Logo" width="100" class="d-inline-block align-text-center">
+            Café Italia
+          </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav" >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu Items
+                </a>
+                <ul class="dropdown-menu fs-5">
+                  <li><a class="dropdown-item" href="Menu.html">Beverages</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="Menu.html#sandwiches">Deli Style Sandwiches</a></li>
+                  <hr>
+                  <li><a class="dropdown-item" href="Menu.html#desserts">Desserts & Pastries</a></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
+                <li class="nav-item">
+                  <a class="nav-link" href="Coupons.html">Coupons</a>
+                </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+          <div class="bg-dark p-4">
+            <h6 class="text-body-emphasis"><a class="nav-link active" aria-current="page" href="index.html">Home</a></h6>
+            <hr>
+            <h6 class="text-body-emphasis"><a class="dropdown-item" href="Menu.html">Beverages</a></h6>
+            <hr>
+            <h6 class="text-body-emphasis"><a class="dropdown-item" href="Menu.html#sandwiches">Sandwiches</a></h6>
+            <hr>
+            <h6 class="text-body-emphasis"><a class="dropdown-item" href="Menu.html#desserts">Desserts</a></h6>
+            <hr>
+            <h6 class="text-body-emphasis"><a class="nav-link" href="Coupons.html">Coupons</a></h6>
+            <hr>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid trans">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+      </nav>
     </header>
 <body>
   <main>

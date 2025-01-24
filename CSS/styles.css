@@ -13,7 +13,7 @@ body {
     font-family: "poiret One, serif";
 }
 
-.dropdown-menu {
+.dropdown-menu, .bg-dark {
     background-color: rgb(66, 40, 23) !important;
     background-image: var(--bs-gradient);
 }
