@@ -5,6 +5,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     font-family: "poiret One, serif";
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -31,7 +32,7 @@ hr {
 
 .carousel {
     width: 65%;
-    height:20%;
+    height:20%;   
     margin: auto;
     padding-top: 3%;
 }
@@ -45,14 +46,17 @@ hr {
 }
 
 fieldset {
-    padding: 10px;
+    padding: 20px;
     border: solid 5px white;
     border-radius: 10px;
-    width: 65%;
     background-color: rgb(66, 40, 23);
     background-image: var(--bs-gradient);
     margin: auto;
 
+}
+
+.about {
+    width: 65%;
 }
 
 .row {
@@ -76,14 +80,13 @@ footer {
 }
 
 .container-map {
-    width: 100%;
     align-items: center;
-
 }
 
 iframe {
-    filter: invert(90%);
+filter: invert(90%);
 }
+
 
 .titles-hours {
     color: white;
