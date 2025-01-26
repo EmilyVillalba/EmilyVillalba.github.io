@@ -39,6 +39,7 @@ hr {
 
 .titles {
     color: white;
+    margin: auto;
     padding-top: 2%;
     text-align: center;
     text-shadow: 5px -4px 5px rgb(29, 18, 10);
@@ -139,8 +140,8 @@ input[type="checkbox"]:hover {
 }
 
 .text-area {
-width: 35%;
-margin-left: 30%;
+width: 40%;
+margin:auto;
 color: white;
 }
 
