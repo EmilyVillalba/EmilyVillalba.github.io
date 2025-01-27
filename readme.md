@@ -17,8 +17,8 @@ Technologies used in the Project:
 4) Google fonts: link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
 5) Google Maps
 6) Draw.io
-7) Pending: Look into using formspree.io
-8) Pending: HTML validador
+7) Formspree.io
+8) HTML validador
 9) AI for images
 
 Future Improvements for the Website:
