@@ -145,11 +145,16 @@ margin:auto;
 color: white;
 }
 
+.form-label {
+    font-size: x-large;
+}
+
 .btn-primary {
     background-color: rgb(66, 40, 23) !important;
     background-image: var(--bs-gradient);
     border-color: rgb(66, 40, 23) !important;
     font-family: "poiret One, serif";
+    font-size: x-large;
     width: 30%;
     margin: auto;
 }
