@@ -2,7 +2,8 @@ const amiiboContainer = document.querySelector(`.js-amiibo-container`);
 let form = document.querySelector(`.js-form`);
 let amiiboInput = document.querySelector(`[name=amiiboName]`);
 
-function loadAmiibos(amiibo) {
+
+function loadAmiibos(amiiboName) {
   fetch(`https://amiiboapi.com/api/amiibo/`)
    .then(data => data.json())
    .then(response => {
@@ -33,15 +34,14 @@ function loadAmiibos(amiibo) {
     })
         .catch(err => {
             console.warn(err);
-            amiiboContainer.innerHTML = '<p><h2>Sorry we did not find an Amiibo with that name.</h2></p>' 
-                                        '<p><h2>Please try again or check spelling!</h2></p>';    
+            amiiboContainer.innerHTML = '<p><h2>Sorry we did not find an Amiibo with that name.</h2></p>';  
     });
 }
 
 function formSubmitted(event) {
     event.preventDefault();
-    let amiibo = amiiboInput.value;
-    loadAmiibos(amiibo);
+    let amiiboName = amiiboInput;
+    loadAmiibos(amiiboName);
 }
 
 form.addEventListener('submit', formSubmitted);
@@ -61,4 +61,22 @@ GET /api/amiibo/?id=value
 
 GET /api/amiibo/?name=value&type=value
       Multiple filter is also possible. 
+
+"amiibo": [
+{
+"amiiboSeries": "Animal Crossing",
+"character": "Sandy",
+"gameSeries": "Animal Crossing",
+"head": "04380001",
+"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04380001-03000502.png",
+"name": "Sandy",
+"release": {
+"au": "2016-11-10",
+"eu": "2016-11-11",
+"jp": "2016-11-03",
+"na": "2016-12-02"
+},
+"tail": "03000502",
+"type": "Card"
+},
 */

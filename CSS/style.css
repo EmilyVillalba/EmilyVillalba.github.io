@@ -1,23 +1,5 @@
 body {
-    min-width: 300px; 
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    width: 30%;
-    margin: 10px;
-    background: rgba(rgb(183, 0, 255) .2);
-    padding: 15px;
-}
-
-.search-bar input {
-    background: transparent;
-}
-
-.search-button {
-
+    width: 100%;
 }
 
 img {
@@ -28,7 +10,7 @@ img {
 h1 {
     font-family: "Yusei Magic";
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 50px 20px;
 }
 
 h2 {
@@ -44,17 +26,38 @@ h3 {
     padding-left: 25px;
 }
 
+form {
+    position: center;
+}
+.search-bar {
+    border-radius: 60px;
+    width: 47%;
+    margin-left: 20%;
+    margin-top: 100px;
+    padding: 15px;
+    font-family: "Yusei Magic";
+    text-size-adjust: 90%;
+}
+
+.search-button {
+    align-items: center;
+    border-radius: 35px;
+    width: 100px;
+    font-family: "Yusei Magic";
+}
+
 .amiibo-item {
-    border: 5px solid black;
+    border: 5px solid rgb(21, 0, 114);
     border-radius: 2px;
-    background-color: rgb(255, 251, 233);
+    background-color: rgb(78, 171, 247);
     margin: 20px;
     padding: 10px;
     width: 350px;
 }
 
 .amiibo-container {
-    display: flex;
+    display: center;
     justify-content: center;
     flex-wrap: wrap;
 }
+
