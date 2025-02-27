@@ -1,3 +1,60 @@
 body {
+    min-width: 300px; 
+}
+
+.search-bar {
     display: flex;
+    align-items: center;
+    border-radius: 60px;
+    width: 30%;
+    margin: 10px;
+    background: rgba(rgb(183, 0, 255) .2);
+    padding: 15px;
+}
+
+.search-bar input {
+    background: transparent;
+}
+
+.search-button {
+
+}
+
+img {
+    width: 250px;
+    margin-left: 30px;
+}
+
+h1 {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin: 15px;
+}
+
+h3 {
+    font-family: "Pompiere";
+    font-weight: 500;
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.amiibo-item {
+    border: 5px solid black;
+    border-radius: 2px;
+    background-color: rgb(255, 251, 233);
+    margin: 20px;
+    padding: 10px;
+    width: 350px;
+}
+
+.amiibo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
