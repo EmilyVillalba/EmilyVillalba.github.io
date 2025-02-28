@@ -1,104 +1,51 @@
 const amiiboContainer = document.querySelector(`.js-amiibo-container`);
-let form = document.querySelector(`.js-form`);
-let amiiboInput = document.querySelector(`[name=amiiboName]`);
-let amiibo = document.getElementById("search-amiibos").value;
-
+const form = document.querySelector(`.js-form`);
+const amiiboInput = document.querySelector(`[name=amiiboName]`);
 
 function loadAmiibos(amiiboName) {
-  fetch(`https://amiiboapi.com/api/amiibo/`)
-   .then(data => data.json())
-   .then(response => {
-    let amiibo = response.amiibo;
+    fetch(`https://amiiboapi.com/api/amiibo/`)
+        .then(response => response.json())
+        .then(data => {
+            let amiibos = data.amiibo;
 
-    amiiboContainer.innerHTML = amiibo
-        .map(amiibo => `
-            <div class="amiibo-item" data-id="${amiibo.character}">
-             <h2>${amiibo.name}</h2>
-             <img 
-                src="${amiibo.image}" 
-                alt="${amiibo.name}">
-                <h3>
+            // Filter the results based on the user's input
+            let filteredAmiibos = amiibos.filter(amiibo => 
+                amiibo.name.toLowerCase().includes(amiiboName.toLowerCase())
+            );
+            amiiboContainer.innerHTML = filteredAmiibos.length > 0 
+            ? filteredAmiibos.map(amiibo => `
+                <div class="amiibo-item">
+                    <h2>${amiibo.name}</h2>
+                    <img src="${amiibo.image}" alt="${amiibo.name}">
                     <p>Character Name: ${amiibo.character}</p>
                     <p>Game Series: ${amiibo.gameSeries}</p>
                     <p>Image Type: ${amiibo.type}</p>
-                    <p>Release Dates:
+                    <p>Release Dates:</p>
                     <ul>
-                        <li>Australia: ${amiibo.release.au}</li>
-                        <li>Europe: ${amiibo.release.eu}</li>
-                        <li>Japan: ${amiibo.release.jp}</li>
-                        <li>USA: ${amiibo.release.na}</li>
+                        <li>Australia: ${amiibo.release.au || "N/A"}</li>
+                        <li>Europe: ${amiibo.release.eu || "N/A"}</li>
+                        <li>Japan: ${amiibo.release.jp || "N/A"}</li>
+                        <li>USA: ${amiibo.release.na || "N/A"}</li>
                     </ul>
-                </h3></p>
-            </div>
-        `)
-        .join(``);
+                </div>
+            `).join("")
+            : '<p class="error-message">Sorry, we did not find an Amiibo with that name...</p>';
     })
-        .catch(err => {
-            console.warn(err);
-            amiiboContainer.innerHTML = '<p class="error-message">Sorry we did not find an Amiibo with that name...</p>';  
+    .catch(err => {
+        console.error(err);
+        amiiboContainer.innerHTML = '<p class="error-message">Failed to fetch data. Please try again later.</p>';
     });
 }
-
-
-function searchAmiibos(amiiboName) {
-    let inputValue = document.getElementById("search-amiibos").value;
-    console.log(inputValue.value);
-    let amiibo = document.getElementById("amiibo-item").value;
-    
-    for (i = 0; i < amiibo.length; i++) {
-        let value = amiibo[i].getElementById("amiibo-item");
-
-        if (value) {
-            if (amiibo.length === 1) {
-                searchbar = amiiboContainer.innerHTML
-            }
-             else { 
-                return '<p class="error-message">Sorry we did not find an Amiibo with that name...</p>'; 
-            }
-        }
-    }
-}
-
-
 function formSubmitted(event) {
-    event.preventDefault();
-    let amiiboName = amiiboInput;
-    loadAmiibos(amiiboName);
+event.preventDefault();
+const amiiboName = amiiboInput.value.trim();
+
+if (amiiboName === "") {
+    amiiboContainer.innerHTML = '<p class="error-message">Please enter a valid Amiibo name.</p>';
+    return;
 }
 
-form.addEventListener('submit', formSubmitted);
+loadAmiibos(amiiboName);
+}
 
-
-/*
-https://amiiboapi.com/api/amiibo/
-
-GET /api/amiibo/
-      Return a list of amiibo available in the API.
-
-GET /api/amiibo/?name=value
-      Return the amiibo information base on it's name.
-
-GET /api/amiibo/?id=value
-      Return the amiibo information base on it's id.
-
-GET /api/amiibo/?name=value&type=value
-      Multiple filter is also possible. 
-
-"amiibo": [
-{
-"amiiboSeries": "Animal Crossing",
-"character": "Sandy",
-"gameSeries": "Animal Crossing",
-"head": "04380001",
-"image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_04380001-03000502.png",
-"name": "Sandy",
-"release": {
-"au": "2016-11-10",
-"eu": "2016-11-11",
-"jp": "2016-11-03",
-"na": "2016-12-02"
-},
-"tail": "03000502",
-"type": "Card"
-},
-*/
+form.addEventListener('submit', formSubmitted);   
