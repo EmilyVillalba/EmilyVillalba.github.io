@@ -4,6 +4,7 @@ body {
     background-repeat: repeat-x;
     background-attachment: fixed;
     overflow-x: hidden;
+    background-color: rgb(113, 61, 255);
 }
 
 img {
@@ -35,15 +36,32 @@ form {
 }
 .search-bar {
     border-radius: 60px;
+    border-color: black;
     width: 47%;
     margin-left: 20%;
     margin-top: 150px;
     padding: 15px;
     font-family: "Yusei Magic";
-    text-size-adjust: 90%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: black;
+    font-weight: 500;
 }
 
 .search-button {
+    background-color: black;
+    color: white;
     align-items: center;
     border-radius: 35px;
     width: 100px;
@@ -51,18 +69,20 @@ form {
     font-family: "Yusei Magic";
 }
 
+.amiibo-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 170px;
+}
 .amiibo-item {
-    border: 5px solid rgb(21, 0, 114);
-    border-radius: 2px;
-    background-color: rgb(78, 171, 247);
+    border: 8px solid black;
+    border-radius: 5px;
+    background-color: rgb(253, 233, 115);
     margin: 20px;
     padding: 10px;
     width: 350px;
 }
 
-.amiibo-container {
-    display: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 
