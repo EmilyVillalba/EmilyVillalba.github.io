@@ -9,14 +9,10 @@ body {
 
 .navbar {
     display: flex;
-    background-color: rgb(113, 61, 255) !important;
+    background: linear-gradient(rgb(113, 61, 255) 50%, rgb(255, 225, 90))!important;
     font-family: "Yusei Magic";
     font-size: larger;
     color: rgb(255, 225, 90) !important;
-}
-
-.nav-link {
-    
 }
 
 img {
@@ -27,7 +23,7 @@ img {
 h1 {
     font-family: "Yusei Magic";
     text-align: center;
-    margin: 50px 100px 20px;
+    margin: 50px 10px 20px;
     color: rgb(113, 61, 255)
 }
 
@@ -100,10 +96,17 @@ form {
 .amiibo-item {
     border: 8px solid black;
     border-radius: 5px;
-    background-color: rgb(253, 233, 115);
+    background: linear-gradient(rgb(255, 225, 90), rgb(113, 61, 255), rgb(255, 225, 90));
     margin: 20px;
     padding: 10px;
     width: 350px;
+}
+
+.error-message {
+    font-family: "Yusei Magic";
+    text-align: center;
+    margin-top: 170px;
+    color: rgb(255, 225, 90);
 }
 
 

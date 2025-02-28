@@ -34,7 +34,7 @@ function loadAmiibos(amiiboName) {
     })
         .catch(err => {
             console.warn(err);
-            amiiboContainer.innerHTML = '<p><h2>Sorry we did not find an Amiibo with that name.</h2></p>';  
+            amiiboContainer.innerHTML = '<p class="error-message"><h2>Sorry we did not find an Amiibo with that name.</h2></p>';  
     });
 }
 
