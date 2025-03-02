@@ -17,15 +17,15 @@ function loadAmiibos(amiiboName) {
                 <div class="amiibo-item">
                     <h2>${amiibo.name}</h2>
                     <img src="${amiibo.image}" alt="${amiibo.name}">
-                    <p>Character Name: ${amiibo.character}</p>
-                    <p>Game Series: ${amiibo.gameSeries}</p>
-                    <p>Image Type: ${amiibo.type}</p>
-                    <p>Release Dates:</p>
+                    <p><h3>Character Name: ${amiibo.character}</h3></p>
+                    <p><h3>Game Series: ${amiibo.gameSeries}</h3></p>
+                    <p><h3>Image Type: ${amiibo.type}</h3></p>
+                    <p><h3>Release Dates:</h3></p>
                     <ul>
-                        <li>Australia: ${amiibo.release.au || "N/A"}</li>
-                        <li>Europe: ${amiibo.release.eu || "N/A"}</li>
-                        <li>Japan: ${amiibo.release.jp || "N/A"}</li>
-                        <li>USA: ${amiibo.release.na || "N/A"}</li>
+                        <li><h3>Australia: ${amiibo.release.au || "N/A"}</h3></li>
+                        <li><h3>Europe: ${amiibo.release.eu || "N/A"}</h3></li>
+                        <li><h3>Japan: ${amiibo.release.jp || "N/A"}</h3></li>
+                        <li><h3>USA: ${amiibo.release.na || "N/A"}</h3></li>
                     </ul>
                 </div>
             `).join("")
