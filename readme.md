@@ -7,7 +7,9 @@ Github link: EmilyVillalba.github.io
 API link: https://amiiboapi.com/api/amiibo/  
 
 Overview & Description of Project 2:
-- Design a website with a search engine that links to an API of my choice.
+- Design a website with a search engine that links to a public API of my choice.
+- Search engine should search API based on keywords that user will input into a search bar.
+- Search bar field and submit button should be displayed side by side on the same line.
 - Project should contain 3 files: index.html, style.css and main.js
 - Create custom grid classes in CSS that make use of flex properties for the layout.
 - Website should only be displayed on one payge, even though Navbar should be displayed and functional.
