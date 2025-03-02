@@ -12,16 +12,16 @@ Overview & Description of Project 2:
 - Search bar field and submit button should be displayed side by side on the same line.
 - Project should contain 3 files: index.html, style.css and main.js
 - Create custom grid classes in CSS that make use of flex properties for the layout.
-- Website should only be displayed on one payge, even though Navbar should be displayed and functional.
+- Website should only be displayed on one page, even though Navbar should be displayed and functional.
 - Website should be functional in both desktop and mobile (320px) screens.
-- In the mobile version images should stack vertically in a signle column.
+- In the mobile version images should stack vertically in a single column.
 - In the mobile version navigation items should stack vertically, as should the site title.
 - Use a Google Font that I have never heard of before and use that style on the overall look of the site.
 
-Funtionality of this site:
+Functionality of this site:
 - This site offers amiibo fans the ability to find the images of cards and/or figurines of their favorite characters.
 - This site is attractive to fans of all ages because it offers a variety of images of each character and their representation found in different games, series and time frames.
-- This site offers an apportunity for collectors to find out what amiibo characters are missing from their collection or what other characters may have an amiibo that they were not aware of.
+- This site offers an opportunity for collectors to find out what amiibo characters are missing from their collection or what other characters may have an amiibo that they were not aware of.
 - Easily navigate through the character options with the search bar.
 - If you are new to the amiibo world you can get ideas of what characters may be available to search with the images found on the background of the website.
 
@@ -40,4 +40,4 @@ Technologies used in this site:
 - API integration
 - Github
 - Draw.io
-- HTML Validador
+- HTML Validator
